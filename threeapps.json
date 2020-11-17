@@ -1,0 +1,316 @@
+[{
+    "id": 0,
+    "name": "videosurviallance",
+	"module": [{
+			"id": 5,
+			"name": "CAMERA",
+			"type": "SOURCE",
+			"RAM": 1
+		},
+		{
+			"id": 6,
+			"name": "PTZCONTROL",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 7,
+			"name": "MOTIONDETECTOR",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 8,
+			"name": "OBJECTDETECTOR",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 9,
+			"name": "USERINTERFACE",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 10,
+			"name": "OBJECTTRACKER",
+			"type": "MODULE",
+			"RAM": 1
+		}
+	],
+	"message": [{
+			"id": 6,
+			"name": "LINK",
+			"s": 5,
+			"d": 7,
+			"instructions": 2000,
+			"bytes": 4
+		},
+		{
+			"id": 7,
+			"name": "LINK",
+			"s": 7,
+			"d": 8,
+			"instructions": 2000,
+			"bytes": 4
+		},
+		{
+			"id": 8,
+			"name": "LINK",
+			"s": 8,
+			"d": 9,
+			"instructions": 2000,
+			"bytes": 4
+		},
+		{
+			"id": 9,
+			"name": "LINK",
+			"s": 8,
+			"d": 10,
+			"instructions": 2000,
+			"bytes": 4
+		},
+		{
+			"id": 10,
+			"name": "LINK",
+			"s": 10,
+			"d": 6,
+			"instructions": 2000,
+			"bytes": 4
+		}
+	]
+},
+{
+    "id": 1,
+    "name": "egggame",
+	"module": [{
+			"id": 0,
+			"name": "EGG",
+			"type": "SOURCE",
+			"RAM": 1
+		},
+		{
+			"id": 1,
+			"name": "Display",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 2,
+			"name": "Client",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 3,
+			"name": "Calculator",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 4,
+			"name": "Coordinator",
+			"type": "MODULE",
+			"RAM": 1
+		}
+	],
+	"message": [{
+			"id": 0,
+			"name": "M.EGG",
+			"s": 0,
+			"d": 2,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 1,
+			"name": "M.Sensor",
+			"s": 2,
+			"d": 3,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 2,
+			"name": "M.Player_Game_State",
+			"s": 3,
+			"d": 4,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 3,
+			"name": "M.Global_State_Update",
+			"s": 4,
+			"d": 2,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 4,
+			"name": "M.Self_State_Update",
+			"s": 2,
+			"d": 1,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 5,
+			"name": "M.Concentration",
+			"s": 3,
+			"d": 2,
+			"instructions": 2000,
+			"bytes": 500
+		}
+	]
+},
+{
+    "id": 1,
+    "name": "sockshop",
+	"module": [
+		{
+			"id": 11,
+			"name": "edge",
+			"type": "SOURCE",
+			"RAM": 1
+		},
+		{
+			"id": 12,
+			"name": "frontend",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 13,
+			"name": "orders",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 14,
+			"name": "accounts",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 15,
+			"name": "catalogue",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 16,
+			"name": "login",
+			"type": "MODULE",
+			"RAM": 1
+		},
+		{
+			"id": 17,
+			"name": "payments",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 18,
+			"name": "shipping",
+			"type": "SINK",
+			"RAM": 1
+		},
+		{
+			"id": 19,
+			"name": "cart",
+			"type": "SINK",
+			"RAM": 1
+		}
+	],
+	"message": [{
+			"id": 11,
+			"name": "11",
+			"s": 11,
+			"d": 12,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 12,
+			"name": "12",
+			"s": 12,
+			"d": 15,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 13,
+			"name": "13",
+			"s": 12,
+			"d": 16,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 14,
+			"name": "14",
+			"s": 12,
+			"d": 14,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 15,
+			"name": "15",
+			"s": 12,
+			"d": 13,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 16,
+			"name": "16",
+			"s": 12,
+			"d": 19,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 17,
+			"name": "17",
+			"s": 13,
+			"d": 14,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 18,
+			"name": "18",
+			"s": 13,
+			"d": 17,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 19,
+			"name": "19",
+			"s": 13,
+			"d": 18,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 20,
+			"name": "20",
+			"s": 13,
+			"d": 19,
+			"instructions": 2000,
+			"bytes": 500
+		},
+		{
+			"id": 21,
+			"name": "21",
+			"s": 16,
+			"d": 14,
+			"instructions": 2000,
+			"bytes": 500
+		}
+	]
+}
+]
